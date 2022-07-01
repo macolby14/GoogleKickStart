@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a160ff8-da4c-4634-b71e-38f4a695295b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SherlockAndParantheses/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SherlockAndParantheses/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BuildingPalindromes/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BuildingPalindromes/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +34,29 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/mark/IdeaProjects/GoogleKickStart/src/SherlockAndParantheses"
+    "last_opened_file_path": "/home/mark/IdeaProjects/GoogleKickStart/src/BuildingPalindromes"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/BuildingPalindromes" />
       <recent name="$PROJECT_DIR$/src/SherlockAndParantheses" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SherlockAndParantheses.Solution">
+  <component name="RunManager" selected="Application.BuildingPalindromes.Solution">
+    <configuration name="BuildingPalindromes.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BuildingPalindromes.Solution" />
+      <module name="GoogleKickStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BuildingPalindromes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SherlockAndParantheses.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SherlockAndParantheses.Solution" />
       <module name="GoogleKickStart" />
@@ -76,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BuildingPalindromes.Solution" />
         <item itemvalue="Application.SherlockAndParantheses.Solution" />
         <item itemvalue="Application.Template.Solution" />
         <item itemvalue="Application.Solution" />
