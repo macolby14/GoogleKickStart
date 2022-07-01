@@ -35,18 +35,8 @@ public class Solution {
     static void solve() {
         int L = inputObject.nextInt();
         int R = inputObject.nextInt();
-        int out = 0;
-        for(int i=1; i<=Math.min(L,R);i++){
-            out += i;
-        }
-       /*
-       () - case 2
-       ()() - case 3 (()) - case 2
-       ()()() - 3 + 2 + 1
-       ()()()() - 4 + 3 + 2 + 1
-        - Take min of L and R
-
-        */
+        int N = Math.min(L, R);
+        int out = N * (N + 1) / 2;
         System.out.println(out);
     }
 }
