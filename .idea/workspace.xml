@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a160ff8-da4c-4634-b71e-38f4a695295b" name="Changes" comment="add tests">
+      <change afterPath="$PROJECT_DIR$/src/IrregularExpressions/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IrregularExpressions/SolutionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IrregularExpressions/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IrregularExpressions/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GoogleKickStart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GoogleKickStart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BuildingPalindromes/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BuildingPalindromes/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BuildingPalindromes/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BuildingPalindromes/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BuildingPalindromes/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BuildingPalindromes/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +44,12 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "/home/mark/IdeaProjects/GoogleKickStart/src/BuildingPalindromes"
+    "last_opened_file_path": "/home/mark/IdeaProjects/GoogleKickStart/src/IrregularExpressions"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/IrregularExpressions" />
       <recent name="$PROJECT_DIR$/src/BuildingPalindromes" />
       <recent name="$PROJECT_DIR$/src/SherlockAndParantheses" />
     </key>
@@ -59,7 +60,7 @@
       <recent name="BuildingPalindromes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BuildingPalindromes.Solution">
+  <component name="RunManager" selected="Application.IrregularExpressions.Solution">
     <configuration name="BuildingPalindromes.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BuildingPalindromes.Solution" />
       <module name="GoogleKickStart" />
@@ -73,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SherlockAndParantheses.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SherlockAndParantheses.Solution" />
+    <configuration name="IrregularExpressions.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IrregularExpressions.Solution" />
       <module name="GoogleKickStart" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SherlockAndParantheses.*" />
+          <option name="PATTERN" value="IrregularExpressions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IrregularExpressions.Solution" />
         <item itemvalue="Application.BuildingPalindromes.Solution" />
         <item itemvalue="JUnit.MyFirstJUnitJupiterTests" />
         <item itemvalue="JUnit.MyFirstJUnitJupiterTests.test" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.SherlockAndParantheses.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +187,11 @@
           <url>file://$PROJECT_DIR$/src/BuildingPalindromes/Solution.java</url>
           <line>57</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/IrregularExpressions/Solution.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
