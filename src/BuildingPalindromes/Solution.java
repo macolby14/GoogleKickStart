@@ -2,6 +2,7 @@ package BuildingPalindromes;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -34,63 +35,44 @@ public class Solution {
         inputObject.close();
     }
 
-    static boolean[][] cache;
+    static int[][] prefix;
 
     static void solve() {
         int N = inputObject.nextInt();
         int Q = inputObject.nextInt();
-        cache = new boolean[N][N];
+        prefix = new int[N+1][26];
         inputObject.nextLine();
         String s = inputObject.nextLine();
 
-        Map<Character, Integer> freq = new HashMap<>();
-        int runningCt = 0;
-        for(int i = 0; i<s.length(); i++){
-           freq = new HashMap<>();
-
-            for(int j=i; j<s.length(); j++){
-                int existingCt = freq.getOrDefault(s.charAt(j),0);
-                freq.put(s.charAt(j),existingCt + 1);
-                cache[i][j] = isPalindrom(freq);
-            }
+        for(int i = 1; i <= N; i++){
+            prefix[i] = Arrays.copyOf(prefix[i - 1],prefix[i].length);
+            prefix[i][s.charAt(i-1)-'A']++;
         }
+
 
         int out = 0;
         for(int i=0; i<Q; i++){
-            int L = inputObject.nextInt() - 1;
-            int R = inputObject.nextInt() - 1;
-            if(cache[L][R]) out++;
-//            if(canBePalindrome(s.substring(L,R + 1))) out++;
+            int L = inputObject.nextInt();
+            int R = inputObject.nextInt();
+            if(isPalindrome(prefix[L - 1],prefix[R])){
+                out++;
+            }
+
         }
 
         System.out.println(out);
     }
 
-    static boolean isPalindrom(Map<Character, Integer> freq){
-        boolean seenOdd = false;
-        for(int i: freq.values()){
-            if(i % 2 != 0 && seenOdd) return false;
-            else if(i%2 != 0) seenOdd = true;
+    static boolean isPalindrome(int[] p1, int[] p2){
+        boolean usedOdd = false;
+        for(int i=0;i<p2.length;i++){
+            if((p2[i] - p1[i]) % 2 != 0 && usedOdd) {
+                return false;
+            }
+            else if((p2[i] - p1[i]) % 2 != 0){
+                usedOdd = true;
+            }
         }
-        return true;
-    }
-
-    static boolean canBePalindrome(String s){
-        Map<Character, Integer> freq = new HashMap<>();
-        System.out.println(s);
-        for(int i = 0; i < s.length(); i++){
-            int existing = freq.getOrDefault(s.charAt(i),0);
-            freq.put(s.charAt(i),existing + 1);
-        }
-
-        boolean seenOdd = false;
-        for(int i: freq.values()){
-            if(i % 2 != 0 && seenOdd) return false;
-            else if(i%2 != 0) seenOdd = true;
-        }
-
-        System.out.println(freq);
-
         return true;
     }
 }
